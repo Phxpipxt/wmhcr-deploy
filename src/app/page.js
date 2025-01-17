@@ -1,9 +1,14 @@
 "use client";
 import Countdown from "@/components/ui/countdown";
 import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faMapMarkerAlt,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLine, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import Link from "next/link";
 import Tickets from "@/components/ticket";
@@ -46,9 +51,24 @@ export default function Home() {
               Better Mental Health, Better Well-being, Better World
             </p>
             <p className="mt-4 text-white text-justify">
-              Aims to educate parents, children, educators, professionals, and individuals from all walks of life on the application of mindfulness and research meditation techniques into schools, homes, and workplaces to help manage the stress of daily life, which often leads to anxiety, depression, andger, sadness, and other forms of mental suffering.
-              To guide companies, government agencies, and businesses in adopting mindfulness and research meditation practices. By doing so, leaders can cultivate wisdom and mindfulness while training employees to perform efficiently and effectively under stress, thereby reducing the risk of mental health challenges that can significantly impact organizational productivity and financial health.
-              To empower social workers, doctors, nurses, and other healthcare professionals with mindfulness techniques for their personal well-being and to better support their patients. This approach emphasizes preventing mental illness in children, students, and patients, recognizing that untreated physical suffering often exacerbates mental distress, creating a cycle of both physical and mental suffering.
+              Aims to educate parents, children, educators, professionals, and
+              individuals from all walks of life on the application of
+              mindfulness and research meditation techniques into schools,
+              homes, and workplaces to help manage the stress of daily life,
+              which often leads to anxiety, depression, andger, sadness, and
+              other forms of mental suffering. To guide companies, government
+              agencies, and businesses in adopting mindfulness and research
+              meditation practices. By doing so, leaders can cultivate wisdom
+              and mindfulness while training employees to perform efficiently
+              and effectively under stress, thereby reducing the risk of mental
+              health challenges that can significantly impact organizational
+              productivity and financial health. To empower social workers,
+              doctors, nurses, and other healthcare professionals with
+              mindfulness techniques for their personal well-being and to better
+              support their patients. This approach emphasizes preventing mental
+              illness in children, students, and patients, recognizing that
+              untreated physical suffering often exacerbates mental distress,
+              creating a cycle of both physical and mental suffering.
             </p>
             <Link
               href="https://asb.to/world-mental-health-proposal"
@@ -401,8 +421,7 @@ export default function Home() {
       {/*</section>*/}
 
       {/*Price Section*/}
-    <Tickets/>
-
+      <Tickets />
 
       {/* Contact Section */}
       <section className="py-12">
@@ -426,13 +445,6 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-gray-700">
                   Our Address
                 </h3>
-                <FontAwesomeIcon
-                  icon={faPhone}
-                  className="text-blue-700 text-2xl"
-                />
-                <h3 className="text-xl font-semibold text-gray-700">
-                  02 430 8888
-                </h3>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">
                 The American School Of Bangkok Green Valley
@@ -441,6 +453,67 @@ export default function Home() {
                 <br />
                 Bangplee, Samutprakarn 10540, Thailand
               </p>
+              {/* Contact Icons */}
+              <div className="flex justify-center space-x-8 mt-8">
+                 {/* Website */}
+                 <a
+                  href="https://mindfulnessacademyasia.com/"
+                  target="_blank"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FontAwesomeIcon
+                    icon={faGlobe}
+                    className="text-blue-500 text-3xl"
+                  />
+                </a>
+                {/* Email */}
+                <a
+                  href="mailto:mma@asb.ac.th"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="text-red-500 text-3xl"
+                  />
+                </a>
+                {/* LINE */}
+                <a
+                  href="https://line.me/ti/p/@mindfulnessacademy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FontAwesomeIcon
+                    icon={faLine}
+                    className="text-green-500 text-3xl"
+                  />
+                </a>
+                {/* WhatsApp */}
+                <a
+                  href="https://wa.me/66935598647"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="text-green-600 text-3xl"
+                  />
+                </a>
+                
+                {/* Telephone */}
+                <a
+                  href="tel:+66935598647"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="text-green-500 text-3xl"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
