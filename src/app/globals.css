@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body & Header */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  @apply bg-white
+}
+
+.header {
+  @apply bg-white shadow-md shadow-pink-500
+}
+
+.h3-header {
+  @apply font-bold text-lg text-gray-800
+}
+
+.div-head {
+  @apply text-4xl font-bold text-pink-500
+}
+
+
+.logo {
+  @apply flex items-center space-x-2
+}
+
+.nav-link {
+  @apply font-semibold text-gray-700 hover:text-pink-500 hover:underline transition-all duration-300
+}
+
+.nav-header {
+  @apply bg-white shadow-md shadow-pink-500 relative
+}
+
+.nav-home {
+  @apply flex items-center space-x-2 text-pink-500 font-bold
+}
+
+.nav-div {
+  @apply container mx-auto px-4 py-4 flex flex-col lg:flex-row lg:items-center lg:justify-between
+}
+
+
+/* Ticket Style */
+.ticket-head {
+  @apply text-5xl font-bold text-pink-500
+}
+
+.ticket-icon {
+  @apply text-green-500 mr-3
+}
+
+.ticket-detail {
+  @apply text-base text-gray-500
+}
+
+.ticket-card {
+  @apply w-full sm:w-[350px] md:w-[400px] lg:w-[450px] border-4 bg-white shadow-xl rounded-xl overflow-hidden
+}
+
+.book-btn {
+  @apply w-full text-white py-3 px-5 rounded-lg font-bold text-lg  transition transform hover:scale-105
+}
+
+.book-btn-div {
+  @apply px-8 py-6 text-center
+}
+
+.ticket-price {
+  @apply text-6xl font-extrabold
+}
+
+.ticket-type {
+  @apply text-2xl font-bold
+}
+
+.currency-btn {
+  @apply px-4 py-2 rounded
+}
+
+.feature-div {
+  @apply px-8 py-6 flex-1
+}
+
+.feature-text {
+  @apply text-lg font-bold mb-4 text-gray-800
+}
+
+.feature-list {
+  @apply text-base space-y-3 text-gray-600
+}
+
+.price-sec {
+  @apply relative px-8 py-6
+}
+
+.ticket-btn {
+  @apply bg-pink-500 text-white px-4 py-2 rounded-lg transition-transform transform hover:scale-105
+}
+
+.early-bird {
+  @apply absolute top-0 right-0 bg-yellow-300 text-yellow-700 px-2 py-2 text-xs font-semibold uppercase rounded-bl-xl
+}
+
+.ul-list {
+  @apply text-gray-600 space-y-4 mt-6
+}
+
+/* Ticket Main Page Style */
+
+.ticket-main-div {
+  @apply w-full sm:w-[300px] md:w-[350px] lg:w-[400px] border-4 bg-white shadow-xl rounded-xl overflow-hidden
+}
+
+.ticket-btn-div {
+  @apply px-6 py-4 text-center flex gap-4 justify-center
+}
+
+.book-btn-main {
+  @apply text-white py-2 px-4 rounded-lg font-bold text-sm transition
+}
+
+.more-btn-main {
+  @apply py-2 px-4 rounded-lg font-bold text-sm hover:bg-gray-200 transition
+}
+
+/* Div Style */
+
+.container-div {
+  @apply container mx-auto px-4 py-8 pt-24
+}
+
+.main-div {
+  @apply flex flex-col lg:flex-row items-start lg:space-x-8
+}
+
+/* Schedule Style */
+
+.schedule-icon {
+  @apply text-pink-500
+}
+.schedule-detail {
+  @apply py-2 text-pink-500
+}
+
+/* Speakers Style */
+
+.speaker-div {
+  @apply mt-4 flex justify-center space-x-4 text-center
+}
+
+.speaker-card {
+  @apply bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl flex flex-col
+}
+
+.speaker-modal {
+  @apply bg-white rounded-lg shadow-2xl max-w-3xl w-full mx-4 p-6 transform transition-all duration-300 scale-95
+}
+
+.speaker {
+  @apply size-48 object-cover rounded-lg
+}
+
+
+/* Video Style */
+
+.video-div {
+  @apply relative border-4 border-pink-500 rounded-lg overflow-hidden
+}
+
+
+/* Countdown Style */
+.countdown-div {
+  @apply flex justify-center items-center gap-4 text-2xl md:text-3xl w-full p-4;
+}
+
+.countdown {
+  @apply flex flex-col items-center bg-pink-500 text-white px-4 py-2 rounded-lg w-28 shadow-lg;
+}
+
+.counting {
+  @apply text-xl font-bold md:text-2xl lg:text-4xl;
+}
+
+.count-label {
+  @apply text-xs md:text-sm lg:text-base;
+}
+
+/* Button Style */
+
+.home-btn {
+  @apply text-gray-700 hover:text-pink-500
+}
+
+/* Partner Style */
+
+.partner-logo {
+  @apply w-16 h-16 object-contain
+}
+
+.powered-logo {
+  @apply h-48 object-contain mx-auto
+}
+
+.partner-div {
+  @apply bg-white border-4 border-yellow-400 rounded-lg shadow-sm p-6
+}
+
+/* Contact & Form Style */
+.contact-div {
+  @apply min-h-[80vh] py-6 flex flex-col items-center justify-center
+}
+
+.contact-card {
+  @apply bg-white shadow-lg rounded-lg p-8 border border-gray-200
+}
+
+.contact-header {
+  @apply text-3xl font-bold text-center text-blue-700 mb-6
+}
+
+.field-div {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4
+}
+
+.form-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4
+}
+
+.form-field {
+  @apply border border-gray-300 rounded px-4 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none
+}
+
+.send-btn {
+  @apply bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 focus:outline-none
+}
+
+.form-div {
+  @apply w-11/12 max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8
+}
+
+.social-logo {
+  @apply text-blue-500
+}
+
+.form-input {
+  @apply w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent
+}
+
+.form-i {
+  @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-500 text-lg
+}
+
+.form-btn {
+  @apply bg-blue-500 text-white font-normal py-2 px-4 w-full rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300
+}
+
+.text-area {
+  @apply w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent
+}
+
+/* Footer Style */ 
+.footer {
+  @apply bg-green-500 text-white text-sm py-10 relative left-0 right-0 bottom-0
+}
+
+.footer-div {
+  @apply flex flex-col md:flex-row justify-between items-center w-11/12 max-w-5xl mx-auto space-y-4 md:space-y-0
+}
+
+.footer-icon {
+  @apply text-white
+}
+
+.footer-link {
+  @apply text-white hover:underline
+}
+
+.footer-info {
+  @apply flex justify-center space-x-4
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50;
+}
+
+/* Modal Content */
+.modal-content {
+  @apply bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4 text-center;
+}
+
+/* Modal Title */
+.modal-title {
+  @apply text-2xl font-bold mb-4 text-pink-500;
+}
+
+/* Close Button */
+.modal-close {
+  @apply bg-pink-500 text-white py-2 px-4 rounded-lg font-bold mt-4 hover:bg-pink-600;
+}
+
+/* Modal Dev */
+.modal-dev-head {
+  @apply text-base font-bold text-pink-500
+}
+
+.modal-dev-name {
+  @apply text-base font-semibold
+}
+
+.policy-head {
+  @apply text-lg font-bold text-pink-500
+}
